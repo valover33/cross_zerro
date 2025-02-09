@@ -1,12 +1,12 @@
 def main():
     x = [1, 3, 5, 0, -1, 3, -2]
-    for i, n in enumerate(x):
+    for i, n in enumerate(x):                           # Возвращает индекс и значение
         if n < 0:
             x.pop(i)
     print(x)
 
     a = 0
-    y = [[1, -1, 0], [2, 5, -9], [-2, -3, 0]]
+    y = [[1, -1, 0], [2, 5, -9], [-2, -3, 0]]           # Подсчет отрицательных значений
     for i in y:
         for j in i:
             if j < 0:
@@ -14,7 +14,7 @@ def main():
     print(a)
 
     z = -4
-    if z < -5:
+    if z < -5:                                          # Использование if в качестве case
         print ("veri low")
     elif z in range(-5, 0):
         print("low")
